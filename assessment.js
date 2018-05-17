@@ -18,8 +18,8 @@ message['text'] = 'iMessage';
 // #4 Create an object called 'adjustCount' and create two methods. One called 'upVote' and one called 'downVote'. upVote should take in a number and add one to it and downVote should take in a number and minus one from it.
 
 var adjustCount = {
-  upVote: function(num){num++},
-  downVote: function(num){num--}
+  upVote: function(num){num++;return num},
+  downVote: function(num){num--;return num}
 };
 
 // #5 Create an array called 'myFriends' with four of your friends names
@@ -76,3 +76,4 @@ function indexFinder(x){
   };
   return indexes;
 };
+var indexes = indexFinder(randomNumbers);
